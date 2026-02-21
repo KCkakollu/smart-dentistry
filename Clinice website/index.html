@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Dentistry | Dr. Veda Priya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🦷 Dr. Veda Priya's <br> SMART DENTISTRY</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#appointments">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Expert Care for Your Best Smile</h1>
+            <p>Modern technology meets compassionate care in Eluru.</p>
+            <a href="#appointments" class="cta-btn" style="text-decoration:none;">Schedule Appointment</a>
+        </div>
+    </header>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="card"><h3>General Checkup</h3><p>Routine cleaning and exams.</p></div>
+            <div class="card"><h3>Teeth Cleaning</h3><p>Professional grade brightness.</p></div>
+            <div class="card"><h3>Root Canal</h3><p>Solutions for tooth decay.</p></div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Meet Dr. Veda Priya</h2>
+                <p>Modern technology meets compassionate care. Your Best Smile is our priority. Dr. Veda Priya is dedicated to the forefront of dental care in the heart of the city.</p>
+            </div>
+            <div class="about-image">
+                <img src="DOC.jpg" alt="Dr. Veda Priya">
+            </div>
+        </div>
+    </section>
+
+    <section id="appointments" style="padding: 80px 5%; text-align: center; background: #f9f9f9;">
+      <div style="background: white; padding: 40px; border-radius: 15px; display: inline-block; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 450px; width: 100%;">
+        <h2 style="color: #007bff;">Request an Appointment</h2> <form id="appointmentForm" name="appointments">
+          <input type="text" name="Patient_Name" placeholder="Full Name" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box;">
+          
+          <input type="number" name="Patient_Age" placeholder="Patient Age" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box;">
+          
+          <input type="tel" name="Phone_Number" placeholder="Phone Number" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box;">
+          
+          <button type="submit" id="submitBtn" style="width: 100%; background: #007bff; color: white; padding: 15px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
+            Confirm Request
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer style="padding: 20px; background: #333; color: white; text-align: center; font-size: 0.9rem;">
+        <p>© 2026 Dr. Veda Priya's Smart Dentistry. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

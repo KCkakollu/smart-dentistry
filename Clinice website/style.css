@@ -1,0 +1,160 @@
+:root {
+    --primary: #007bff;
+    --secondary: #2c3e50;
+    --light: #f4f7f6;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--secondary);
+}
+
+/* NAVBAR FIX: Logo left, Links center, Button right */
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            /* This keeps the small button and the text in a straight line */
+    padding: 10px 5%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex: 1; /* Helps with alignment */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0 auto; /* THE MAGIC LINE: Centers the links */
+    padding: 0;
+    flex: 2;
+    justify-content: center;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+.btn-nav {
+    text-decoration: none;
+    background: var(--primary);
+    color: white;
+    padding: 8px 15px;      /* Reduced from 10px 20px to make it smaller */
+    border-radius: 5px;
+    font-size: 0.9rem;      /* Slightly smaller text */
+    font-weight: 600;
+    flex: 0.5;              /* Takes up less horizontal space */
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn-nav:hover {
+    background: #0056b3;    /* Darkens slightly when you point at it */
+}
+
+/* HERO SECTION */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,123,255,0.6), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.booking-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.booking-container input, .booking-container select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Keeps everything inside the box */
+}
+/* SERVICES */
+.services { padding: 50px 5%; text-align: center; }
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.card { padding: 20px; background: var(--light); border-radius: 10px; }'.about-section {
+    padding: 80px 5%;
+    background: linear-gradient(rgba(0,123,255,0.7), rgba(0,0,0,0.5)), 
+                url('clinic-bg.jpg') center/cover; /* This adds the blue clinic background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section {
+    padding: 80px 5%;
+    background-color: #f0f4f8; /* A light, clean background for the whole section */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Space between the text box and the photo */
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* THE TEXT BOX */
+.about-text {
+    flex: 1;
+    background: white;        /* White box for the text */
+    padding: 40px;            /* Space inside the box */
+    border-radius: 15px;      /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08); /* Soft shadow for a "lifted" look */
+    text-align: left;
+}
+
+.about-text h2 {
+    color: var(--primary);
+    margin-top: 0;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 250px;             /* Keeps the image large and clear */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
